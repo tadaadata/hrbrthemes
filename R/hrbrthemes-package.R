@@ -17,7 +17,7 @@
 #' to register non-core fonts with the Windows graphics device.
 #'
 #' @md
-#' @name hrbrthemes
+#' @name tadaathemes
 #' @docType package
 #' @author Bob Rudis (bob@@rud.is)
 #' @import ggplot2 grid scales extrafont
@@ -26,16 +26,16 @@
 #' @importFrom tools file_path_sans_ext
 NULL
 
-#' hrbrthemes exported operators
+#' tadaathemes exported operators
 #'
 #' The following functions are imported and then re-exported
-#' from the hrbrthemes package to enable use of the magrittr
+#' from the tadaathemes package to enable use of the magrittr
 #' pipe operator with no additional library calls
 #'
-#' @name hrbrthemes-exports
+#' @name tadaathemes-exports
 NULL
 
 #' @name %>%
 #' @export
-#' @rdname hrbrthemes-exports
+#' @rdname tadaathemes-exports
 NULL

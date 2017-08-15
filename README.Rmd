@@ -5,7 +5,14 @@ output: rmarkdown::github_document
 knitr::opts_chunk$set(collapse=TRUE, comment="##", fig.retina=2, fig.path = "README_figs/README-")
 ```
 
-## `hrbrthemes` : Additional Themes and Theme Components for 'ggplot2'
+## `tadaathemes` : The Themes We Like
+
+This R package contains themes for `ggplot2` (and possibly other things like `rmarkdown::html_document`) to be used with our analysis projects.  
+It's forked from [hrbrmstr/hrbrthemes](https://hrbrmstr.github.io/hrbrthemes/), because we're not *that* much into it, but into it *enough* to start with the great work of nice people.  
+
+## Original `README`
+
+### `hrbrthemes` : Additional Themes and Theme Components for 'ggplot2'
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/0.1.0/active.svg)](http://www.repostatus.org/#active) 
 [![codecov](https://codecov.io/gh/hrbrmstr/hrbrthemes/branch/master/graph/badge.svg)](https://codecov.io/gh/hrbrmstr/hrbrthemes)
@@ -33,7 +40,7 @@ The following functions are implemented/objects are exported:
 - `font_rc`: a short global alias for "`Roboto Condensed`"
 - `font_rc_light`: a short global alias for "`Roboto Condensed Light`"
 
-### Installation
+#### Installation
 
 ```{r eval=FALSE}
 devtools::install_github("hrbrmstr/hrbrthemes")
@@ -43,7 +50,7 @@ devtools::install_github("hrbrmstr/hrbrthemes")
 options(width=120)
 ```
 
-### Usage
+#### Usage
 
 ```{r message=FALSE, warning=FALSE, error=FALSE}
 library(hrbrthemes)
@@ -54,7 +61,7 @@ library(tidyverse)
 packageVersion("hrbrthemes")
 ```
 
-### Base theme (Arial Narrow)
+#### Base theme (Arial Narrow)
 
 ```{r fig.retina=2}
 ggplot(mtcars, aes(mpg, wt)) +
@@ -66,7 +73,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   theme_ipsum()
 ```
 
-### Roboto Condensed
+#### Roboto Condensed
 
 ```{r fig.retina=2}
 ggplot(mtcars, aes(mpg, wt)) +
@@ -78,7 +85,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   theme_ipsum_rc()
 ```
 
-### Scales (Color/Fill)
+#### Scales (Color/Fill)
 
 ```{r fig.retina=2}
 ggplot(mtcars, aes(mpg, wt)) +
@@ -91,7 +98,7 @@ ggplot(mtcars, aes(mpg, wt)) +
   theme_ipsum_rc()
 ```
 
-### Scales (Axis)
+#### Scales (Axis)
 
 ```{r fig.retina=2}
 count(mpg, class) %>% 
@@ -139,7 +146,7 @@ count(mpg, class) %>%
   theme_ipsum_rc(grid="X")
 ```
 
-### Spellcheck ggplot2 labels
+#### Spellcheck ggplot2 labels
 
 ```{r fig.retina=2, message=TRUE}
 df <- data.frame(x=c(20, 25, 30), y=c(4, 4, 4), txt=c("One", "Two", "Three"))
@@ -155,9 +162,9 @@ ggplot(mtcars, aes(mpg, wt)) +
 gg_check(gg)
 ```
 
-### Test Results
+#### Test Results
 
-```{r message=FALSE, warning=FALSE, error=FALSE}
+```{r, message=FALSE, warning=FALSE, error=FALSE}
 library(hrbrthemes)
 
 date()
@@ -165,6 +172,6 @@ date()
 devtools::test()
 ```
 
-### Code of Conduct
+#### Code of Conduct
 
 Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
